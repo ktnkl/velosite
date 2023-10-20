@@ -96,7 +96,7 @@ body {
 }
 
 .main-header {
-  background-color: #0df130;
+  background-color: #000;
 }
 
 #top-nav {
@@ -107,7 +107,7 @@ body {
 }
 
 .nav-item {
-  color:#fff;
+  color:#05ff2c;
   font-size: 25px;
   font-weight: 700;
 
@@ -133,6 +133,8 @@ body {
   font-size: 45px;
   font-weight: bold;
   text-align: center;
+
+  margin: 30px;
 }
 
 #main-title {
@@ -150,9 +152,72 @@ body {
   justify-content: space-around;
 }
 
-.shop-article {
-  border: 1px #555 solid;
+.card {
+  border: 10px solid #000;
   border-radius: 15px;
+  padding: 10px;
+  box-shadow: 10px 10px 5px #000; 
 
-  align-items: center;
+  text-align: center;
+
+  max-width: 350px;
+  min-height: 470px;
+
+  position: relative;
+}
+
+.shop-article > p, h3 {
+  margin-top: 15px;
+
+  font-weight: 700;
+}
+
+
+.shop-article-link {
+  background-color: #000;
+  border-radius: 5px;
+
+  color: #05ff2c;
+  font-weight: 700;
+
+  padding: 10px;
+  margin-top: 20px;
+
+  position: absolute;
+  bottom: 20px;
+  left: 120px
+}
+
+
+.mark {
+  position: absolute;
+  background-color: #000;
+  color:#fff;
+  font-size: 20px;
+  font-weight: 600;
+  padding: 10px;
+  border-radius: 0 0 10px 0;
+}
+
+.news-article {
+  border: 10px solid #000;
+  border-radius: 15px;
+  padding: 10px;
+  margin: 15px;
+
+  font-size: 24px;
+}
+
+footer {
+  background-color: #000;
+  color: #fff;
+  height: 100px;
+  display: flex;
+  flex-direction: column;
+}
+
+footer > a {
+  color: #fff;
+  margin: 10px;
+
 }
