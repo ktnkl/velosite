@@ -95,31 +95,32 @@ body {
   margin: 0;
 }
 
-.main-header {
+.site-header {
   background-color: #000;
-}
-
-#top-nav {
-  display: flex;
-  justify-content: space-around;
-
-  padding: 10px;
-}
-
-.nav-item {
   color:#05ff2c;
   font-size: 25px;
   font-weight: 700;
 
+  display: flex;
+  justify-content: space-around;
+}
+
+.wide-device-nav {
+  
+}
+
+.all-device-nav__link {
+  padding: 10px;
+  color:#05ff2c;
+}
+
+.wide-device-nav__link {
+  color:#05ff2c;
+  
   margin: 10px;
 }
 
-#main-img > img {
-  width: 95vw;
-  height: 100vh;
-}
-
- #main-img {
+.intro {
   background-image: url(images/mountain.jpg);
   height: 100vh;
   background-repeat: no-repeat;
@@ -137,7 +138,7 @@ body {
   margin: 30px;
 }
 
-#main-title {
+.intro__title {
   position: absolute;
   top: 15%;
 
@@ -147,15 +148,22 @@ body {
   background-color: #000;
 }
 
-.flex-container {
+.shop {
   display: flex;
-  justify-content: space-around;
+  flex-direction: column;
+}
+
+.cards-wrapper {
+  display: flex;
+  justify-content: start;
+  flex-wrap: wrap;
 }
 
 .card {
   border: 10px solid #000;
   border-radius: 15px;
   padding: 10px;
+  margin: 20px;
   box-shadow: 10px 10px 5px #000; 
 
   text-align: center;
@@ -164,16 +172,21 @@ body {
   min-height: 470px;
 
   position: relative;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
 }
 
-.shop-article > p, h3 {
-  margin-top: 15px;
-
+.shop-card__title,
+.shop-card__available,
+.shop-card__price,
+.shop-card__link {
+  margin-top: 20px;
   font-weight: 700;
 }
 
-
-.shop-article-link {
+.shop-card__link {
   background-color: #000;
   border-radius: 5px;
 
@@ -182,21 +195,48 @@ body {
 
   padding: 10px;
   margin-top: 20px;
-
-  position: absolute;
-  bottom: 20px;
-  left: 120px
 }
 
+.review-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
 
-.mark {
-  position: absolute;
+  border: 10px solid #000;
+  border-radius: 15px;
+  padding: 10px;
+  margin: 20px;
+  box-shadow: 10px 10px 5px #000; 
+
+  text-align: center;
+
+  max-width: 350px;
+  min-height: 470px;
+
+  position: relative
+}
+
+.review-card__mark {
   background-color: #000;
   color:#fff;
   font-size: 20px;
   font-weight: 600;
   padding: 10px;
   border-radius: 0 0 10px 0;
+
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.review-card__title {
+  font-weight: 700;
+  margin: 10px;
+}
+
+.news {
+  display: flex;
+  flex-direction: column;
 }
 
 .news-article {
@@ -206,6 +246,10 @@ body {
   margin: 15px;
 
   font-size: 24px;
+}
+
+.news-article__title {
+  font-weight: 700;
 }
 
 footer {
