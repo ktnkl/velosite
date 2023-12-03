@@ -105,19 +105,25 @@ body {
   justify-content: space-around;
 }
 
-.wide-device-nav {
-  
+.site-header__mobile-nav {
+  max-height: 20px;
+  max-width: 40px;
+  display: none;
 }
 
 .all-device-nav__link {
   padding: 10px;
   color:#05ff2c;
+
+  display: flex;
+
 }
 
-.wide-device-nav__link {
+.wide-device-nav {
   color:#05ff2c;
   
   margin: 10px;
+  align-items: center;
 }
 
 .intro {
@@ -157,6 +163,7 @@ body {
   display: flex;
   justify-content: start;
   flex-wrap: wrap;
+  align-content: start;
 }
 
 .card {
@@ -252,7 +259,7 @@ body {
   font-weight: 700;
 }
 
-footer {
+.footer {
   background-color: #000;
   color: #fff;
   height: 100px;
@@ -260,8 +267,47 @@ footer {
   flex-direction: column;
 }
 
-footer > a {
+.footer__link {
   color: #fff;
   margin: 10px;
 
+}
+
+@media (max-width: 800px) {
+  .site-header__logo {
+    display: none;
+  }
+
+  .site-header__title {
+    font-size: 20px;
+  }
+
+  .wide-device-nav {
+    display: none;
+  }
+
+  .cards-wrapper {
+    flex-direction: column;
+    justify-content: space-between;
+    align-content: normal;
+    align-items: center;
+  }
+
+  .card {
+    max-height: 350px;
+    max-width: 250px;
+    justify-content: startS;
+  }
+
+.shop-card__title,
+.shop-card__available,
+.shop-card__price,
+.shop-card__link {
+  margin-top: 8px;
+  font-weight: 500;
+}
+
+.title {
+  font-size: 24px;
+}
 }
