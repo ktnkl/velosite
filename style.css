@@ -126,6 +126,10 @@ body {
   align-items: center;
 }
 
+.wide-device-nav__link {
+  color:#05ff2c
+}
+
 .intro {
   background-image: url(images/mountain.jpg);
   height: 100vh;
