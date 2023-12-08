@@ -367,7 +367,7 @@ font-size: 18px;
 
 }
 
-@media (max-width: 800px) {
+@media (max-width: 600px) {
   .wide-device-nav {
     display: none;
   }
@@ -384,11 +384,14 @@ font-size: 18px;
 
   .intro {
     background-image: none;
-    display: block;
+    display: flex;
+    flex-direction: column;
   }
 
   .intro-greeting {
-    
+    align-self: center;
+    width: 100vw;
+    height: auto;
   }
 
   .intro-greeting__title {
@@ -396,11 +399,7 @@ font-size: 18px;
     text-align: center;
 
     padding: 10px;
-    margin: 10px;
-
-    min-width: 100vw;
-    align-self: center;
-    
+    margin: 30px;
   }
   
   .auth-form {
@@ -422,4 +421,71 @@ font-size: 18px;
     font-size: 14px;
   }
   
+
+  .shop__title {
+    font-size: 24px;
+  }
+
+  .shop-card {
+    max-width: 120px;
+    min-height: 220px;
+
+    border: 2px solid #000;
+    border-radius: 15px;
+    padding: 10px;
+    margin: 10px 0;
+    box-shadow: none; 
+  }
+
+  .shop-card__available,
+  .shop-card__link,
+  .shop-card__price {
+    margin-top: 5px;
+    font-weight: 500;
+  }
+
+  .shop-card__title {
+    word-wrap: break-word;
+  }
+
+
+  .reviews__title {
+    font-size: 24px;
+  }
+
+  .review-card {
+    max-width: 120px;
+    min-height: 220px;
+
+    border: 2px solid #000;
+    border-radius: 15px;
+    padding: 10px;
+    margin: 10px 0;
+    box-shadow: none; 
+  }
+
+  .review-card__mark {
+    display: none;
+  }
+
+  .shop-card__title {
+    word-wrap: break-word;
+  }
+
+
+  .news__title {
+    font-size: 24px;
+  }
+
+  .news-article {
+    border: 2px solid #000;
+  }
+
+  .news-article__title {
+    font-size: 18px;
+  }
+
+  .news-article__content {
+    font-size: 14px;
+  }
 }
