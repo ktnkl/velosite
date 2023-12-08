@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="favicon.ico">
   <title>Velo Place</title>
 </head>
 <body>
@@ -25,17 +26,55 @@
     </nav>
   </header>
     <main>
-      <!-- <section class="intro">
-        <h1 class="intro__title title">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit.
-        </h1>
-      </section> -->
+      <section class="intro">
+        <div class="intro-greeting">
+          <h1 class="intro-greeting__title">
+            В Velo Place мы собрали все что нужно велосипедисту: форум, магазин, обзоры и последние новости из вело мира. Присоединяйся к нам и внеси свой вклад в развитие вело тусовки в России!
+          </h1>
+          <form action="" class="auth-form">
+            <input type="text" 
+              placeholder="Никнейм"
+              class="auth-form__input-nickname"
+            >
+            <input type="text" 
+              placeholder="Электронная почта"
+              class="auth-form__input-email"
+            >
+            <input type="password" 
+              name="" 
+              id="" 
+              placeholder="Пароль"
+              class="auth-form__input-password">
+            <input type="password" 
+              placeholder="Подтвердите пароль"
+              class="auth-form__input-confirm-password"
+            >
+            <!-- <input type="checkbox" 
+              class="auth-form__input-checkbox"
+            >
+            <label for="">Подписаться на рассылку по почте</label> -->
+            <button class="auth-form__log-in-button">Войти</button>
+            <button class="auth-form__sign-up-button">Регистрация</button>
+            <article class="alternative-log-in">
+              <p class="alternative-log-in">Войти через:</p>
+              <div class="images-wrapper">
+                <button>
+                  <img src="images/yandex.png" alt="" class="images-wrapper__item">
+                </button>
+                <button>
+                  <img src="images/google.png" alt="" class="images-wrapper__item">
+                </button>
+              </div>
+            </article>
+          </form>
+        </div>
+      </section>
       <section class="shop">
-        <h1 class="shop__title title">
+        <h1 class="shop__title">
           Обновления магазина
         </h1>
         <div class="cards-wrapper">
-          <article class="card shop-card">
+          <article class="shop-card">
             <img src="images/shop1.jpg" alt="" class="card__image shop-card__image">
             <h3 class="card__title shop-card__title">Giant Fitnes</h3>
             <p class="shop-card__available">Есть в наличии</p>
@@ -59,7 +98,7 @@
         </div>
       </section>
       <section class="reviews">
-        <h1 class="reviews__title title">
+        <h1 class="reviews__title">
           Обзоры
         </h1>
         <div class="cards-wrapper">
@@ -84,7 +123,7 @@
         </div>
       </section>
       <section class="news">
-        <h1 class="news__title title">
+        <h1 class="news__title">
           Новости
         </h1>
         <article class="news-article">
@@ -110,6 +149,7 @@
   <footer class="footer">
     <a href="#" class="footer__link">О нас</a>
     <a href="#" class="footer__link">Сотрудничество</a>
+    <a href="https://icon666.com/ru" class="footer__link">Бесплатные SVG иконки на icon666.com"</a>
   </footer> 
 </body>
 </html>

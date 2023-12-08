@@ -102,7 +102,7 @@ body {
   font-weight: 700;
 
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
 }
 
 .site-header__mobile-nav {
@@ -124,6 +124,9 @@ body {
   
   margin: 10px;
   align-items: center;
+  display:flex;
+  width: 50vw;
+  justify-content: space-around;
 }
 
 .wide-device-nav__link {
@@ -136,26 +139,89 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
 
-  position: relative;
-} 
+  display: flex;
+  flex-direction: row-reverse;
+}
 
-.title {
+.intro-greeting {
+  align-self: flex-end;
+
+  background: #fff;
+  height: 100vh;
+  width: 50vw;
+  /* border-radius: 300px 0 0 0; */
+}
+
+.intro-greeting__title {
+  color: #000;
+  font-size: 25px;
+  font-weight: bold;
+  text-align: center;
+
+  padding: 100px;
+}
+
+.auth-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.auth-form__input-nickname,
+.auth-form__input-email,
+.auth-form__input-password,
+.auth-form__input-confirm-password
+/* .auth-form__input-checkbox */
+ {
+  border-bottom: 1px solid #222;
+  margin-bottom: 10px;
+
+  font-size: 20px;
+}
+
+.auth-form__input-nickname,
+.auth-form__input-confirm-password {
+  display: none;
+}
+
+.auth-form__log-in-button,
+.auth-form__sign-up-button {
+  margin: 10px;
+}
+
+.auth-form__log-in-button {
+  background-color: #000;
+  color: #05ff2c;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+/* .auth-form__sign-up-button {
+  text-decoration: underline;
+} */
+
+.alternative-log-in {
+  display: flex;
+  flex-direction: column;
+}
+
+.images-wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.images-wrapper__item {
+  margin: 10px;
+}
+
+.shop__title {
   color: #000;
   font-size: 45px;
   font-weight: bold;
   text-align: center;
 
   margin: 30px;
-}
-
-.intro__title {
-  position: absolute;
-  top: 15%;
-
-  margin: 0px 160px;
-
-  color: #fff;
-  background-color: #000;
 }
 
 .shop {
@@ -165,12 +231,12 @@ body {
 
 .cards-wrapper {
   display: flex;
-  justify-content: start;
+  justify-content: space-around;
   flex-wrap: wrap;
   align-content: start;
 }
 
-.card {
+.shop-card {
   border: 10px solid #000;
   border-radius: 15px;
   padding: 10px;
@@ -208,10 +274,19 @@ body {
   margin-top: 20px;
 }
 
+.reviews__title {
+  color: #000;
+  font-size: 45px;
+  font-weight: bold;
+  text-align: center;
+
+  margin: 30px;
+}
+
 .review-card {
   display: flex;
   flex-direction: column;
-  justify-content: start;
+  justify-content: end;
 
   border: 10px solid #000;
   border-radius: 15px;
@@ -250,6 +325,15 @@ body {
   flex-direction: column;
 }
 
+.news__title {
+  color: #000;
+  font-size: 45px;
+  font-weight: bold;
+  text-align: center;
+
+  margin: 30px;
+}
+
 .news-article {
   border: 10px solid #000;
   border-radius: 15px;
@@ -269,6 +353,7 @@ body {
   height: 100px;
   display: flex;
   flex-direction: column;
+  flex-wrap: wrap;
 }
 
 .footer__link {
