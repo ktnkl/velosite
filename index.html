@@ -15,14 +15,20 @@
         <h1 class="site-header__title">Velo Place</h1>
       </a>
     </nav>
-    <nav class="wide-device-nav">
+    <nav class="wide-device-nav wide-device-nav_invisible">
         <a href="#" class="wide-device-nav__link">Магазин</a>
         <a href="#" class="wide-device-nav__link">Общение</a>
         <a href="#" class="wide-device-nav__link">Обзоры</a>
         <a href="#" class="wide-device-nav__link">Статьи</a>
     </nav>
-    <nav class="site-header__mobile-nav">
-      <img src="images/menu_button.png" alt="">
+    <nav class="mobile-nav">
+      <img src="images/menu_button.png" alt="" class="mobile-nav__button">
+      <section class="mobile-nav-links mobile-nav-links_invisible">
+        <a href="#" class="mobile-nav-links__link">Магазин</a>
+        <a href="#" class="mobile-nav-links__link">Общение</a>
+        <a href="#" class="mobile-nav-links__link">Обзоры</a>
+        <a href="#" class="mobile-nav-links__link">Статьи</a>
+      </section>
     </nav>
   </header>
     <main>
@@ -42,8 +48,6 @@
             class="auth-form__input-email"
           >
           <input type="password" 
-            name="" 
-            id="" 
             placeholder="Пароль"
             class="auth-form__input-password">
           <input type="password" 
@@ -152,5 +156,6 @@
     <a href="#" class="footer__link">Сотрудничество</a>
     <a href="https://icon666.com/ru" class="footer__link">Бесплатные SVG иконки </a>
   </footer> 
+  <script src="script.js"></script>
 </body>
 </html>
